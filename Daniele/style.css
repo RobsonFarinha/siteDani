@@ -1,0 +1,14 @@
+body{
+  text-align: center;
+}
+h2{
+  color: antiquewhite;
+}
+.fundo1{
+  background-image: url(daniele.jpeg),;
+  text-align: center;
+  background-position: center;
+  background-repeat: center;
+  image-orientation: center;
+
+}
