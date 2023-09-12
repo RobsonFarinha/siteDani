@@ -1,14 +1,218 @@
-body{
-  text-align: center;
-}
-h2{
-  color: antiquewhite;
-}
-.fundo1{
-  background-image: url(daniele.jpeg),;
-  text-align: center;
-  background-position: center;
-  background-repeat: center;
-  image-orientation: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: borber-box;
 
+}
+
+nav {
+  background-color: #2B2D42;
+  background-position: center;
+  width: 100%;
+  height: 10%;
+  font-size: 28px;
+  font-family: Open, Helvetica, sans-serif;
+  color: #8D99AE;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  opacity: .8;
+}
+
+li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 400px;
+  font-size: 75px;
+  position: absolute;
+
+}
+
+.p1 {
+  margin-top: 250px;
+  font-size: 25px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 110px;
+  margin-left: 25.4%;
+  display: inline-block;
+  position: absolute;
+  font-size: 122px;
+  opacity: .6;
+  justify-content: center;
+
+}
+
+.image {
+  opacity: .6;
+  position: absolute;
+  width: 100%;
+  height: 590px;
+}
+
+.button1 {
+  background-color: #8D99AE;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+  position: relative;
+  margin-left: 45%;
+}
+
+.div2 {
+  width: 100%;
+  height: 590px;
+  position: absolute;
+  margin-top: 650px;
+
+}
+
+.img2 {
+  width: 350px;
+  margin-left: 25px;
+  margin-top: 105px;
+}
+
+.h12 {
+  margin-top: 110px;
+  margin-left: 40%;
+  display: inline-block;
+  position: absolute;
+  font-size: 122px;
+  opacity: .6;
+  justify-content: center;
+}
+
+.p2 {
+  width: 650px;
+  height: 350px;
+  margin-top: 250px;
+  margin-left: 190px;
+  display: inline-block;
+  position: absolute;
+  font-size: 30px;
+}
+
+.h3 {
+  margin-top: 1010px;
+  margin-left: 25.4%;
+  display: inline-block;
+  position: absolute;
+  font-size: 45px;
+
+  justify-content: center;
+
+}
+
+.work {
+  width: 100%;
+  height: 590px;
+  display: inline;
+  position: absolute;
+  margin-top: 1300px;
+}
+
+h2 {
+  font-size: 45px;
+  text-align: center;
+  color: #6C757D;
+
+}
+.workbis{
+  width: 200px;
+  height: 200px;
+ background-image: url("./android-chrome-192x192.png");
+ background-size: 200px;
+ border: none;
+ margin-left: 55px;
+
+}
+
+
+
+
+
+
+.menu{
+  position:relative;
+ width:280px;
+  height:280px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+}
+.menu .toggle{
+  position:relative;
+  height:60px;
+  width:60px;
+  background:#fff;
+  border-radius:50%;
+  box-shadow:0 3px 4px rgba(0,0,0,0.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#333;
+  font-size:2rem;
+  cursor:pointer;
+  transition:1.25s;
+  z-index:5;
+}
+.menu.active .toggle{
+  transform:rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15),
+    0 0 0 2px #333,
+    0 0 0 8px #fff;
+}
+.menu li{
+  position:absolute;
+  left:0;
+  list-style:none;
+  transition:0.5s;
+  transform:rotate(calc(360deg/28 *var(--i)));
+  transform-origin:140px;
+  scale:0;
+  transition-delay: calc(0.05s * var(--i));
+}
+.menu.active li{
+  scale:1;
+}
+.menu li a{
+  position:relative;
+  display:flex;
+ transform:rotate(calc(360deg/-8 * var(--i)));
+  width:60px;
+  height:60px;
+  background-color:#FFF;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  font-size:1.75rem;
+  color:var(--clr);
+   box-shadow:0 3px 4px rgba(0,0,0,0.15);
+  transition:0.5s;
+}
+.menu li:hover a{
+  font-size:2.5rem;
+  box-shadow:0 0 0 2px var(--clr),
+    0 0 0 6px #fff;
+}
+.position{
+  position: fixed;
+  margin-top: 350px;
+  margin-left: 80%;
 }
